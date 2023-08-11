@@ -16,9 +16,7 @@ function App() {
   });
   return (
     <div className="App">
-      <h1>Logo</h1>
       <h1 className='JL-Photographs'>JL Photographs<br/>
-        -----------------------<br/>
         The Next Legendary Photographer</h1>
       <div className='App--gallery'>
         {info}

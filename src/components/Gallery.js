@@ -19,11 +19,11 @@ function Gallery(props) {
         className={countClick === 1 ? "Gallery--img-expand":"Gallery--img"}
         onClick={handleCountClick}
       />
-      <div className="Gallery--text">
+      <div className={countClick === 1 ? "Gallery--text-move" : "Gallery--text"}>
         <h3 className="Gallery--title">{props.title}</h3>
         <p className="Gallery--caption">{props.caption}</p>
       </div>
-    </section>
+    </section>  
   );
 }
 
