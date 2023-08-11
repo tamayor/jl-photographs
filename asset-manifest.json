@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/jl-photographs/static/css/main.ad089071.css",
+    "main.js": "/jl-photographs/static/js/main.ed3a63e3.js",
+    "static/js/787.61e57d44.chunk.js": "/jl-photographs/static/js/787.61e57d44.chunk.js",
+    "static/media/pexels-matheus-bertelli-573299.jpg": "/jl-photographs/static/media/pexels-matheus-bertelli-573299.c528fdba5ccc65363d0c.jpg",
+    "static/media/pexels-hannah-nelson-1065084.jpg": "/jl-photographs/static/media/pexels-hannah-nelson-1065084.33d0df283fd51df454a8.jpg",
+    "static/media/pexels-italo-melo-2379004.jpg": "/jl-photographs/static/media/pexels-italo-melo-2379004.1f3e2a391e8eb0ab30f9.jpg",
+    "static/media/pexels-andrea-piacquadio-762020.jpg": "/jl-photographs/static/media/pexels-andrea-piacquadio-762020.0fed5fe366af76445d38.jpg",
+    "index.html": "/jl-photographs/index.html",
+    "main.ad089071.css.map": "/jl-photographs/static/css/main.ad089071.css.map",
+    "main.ed3a63e3.js.map": "/jl-photographs/static/js/main.ed3a63e3.js.map",
+    "787.61e57d44.chunk.js.map": "/jl-photographs/static/js/787.61e57d44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad089071.css",
+    "static/js/main.ed3a63e3.js"
+  ]
+}
