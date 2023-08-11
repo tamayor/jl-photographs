@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import Gallery from './components/Gallery';
+import Info from './components/Info';
 import './App.css';
 
 function App() {
+  const info = Info.map((info,index) => {
+    return(
+      <Gallery
+      key={index}
+      img = {info.image}
+      title = {info.title}
+      caption = {info.caption}
+    />
+    )
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Logo</h1>
+      <div className='App--gallery'>
+        <h1 className='JL-Photographs'>JL Photographs<br/>
+        -----------------------<br/>
+        The Next Legendary Photographer</h1>
+        {info}
+      </div>
     </div>
   );
 }
