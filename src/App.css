@@ -1,38 +1,47 @@
 *{
   box-sizing: border-box;
+  font-family: 'Changa', sans-serif;
 }
 @media (min-width: 999px) {
+  .highlighT{
+    opacity: 1;
+  }
+  .bluR{
+    opacity: .5;
+  }
+  .App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .JL-Photographs{
     text-align: center;
     display: grid;
     grid-column: span 2;
   }
-  .App--gallery{
-    position: relative;
-    overflow-y: hidden;
-    height: max-content;
-    width: max-content;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    transition: height 60s ease;
-  
-  }
-  
-  .Gallery{
-    height: max-content;
-    width: min-content;
-    margin: 20px 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
+ .App--gallery {
+  width: 95vw;
+  display: flex;
+  overflow-x: scroll;
+  margin: 20px;
+}
+
+.Gallery {
+  height: max-content;
+  width: max-content;
+  margin: 20px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
   .Gallery--img-expand {
-    position: relative;
-    width: 50vh;
+    height: 50vh;
     transition: all 1s ease;
     border-radius: 20px;
+    transform: translateY(-30px);
   }
   
   .Gallery--img{
@@ -43,22 +52,23 @@
     object-fit: cover;
     border-radius: 20px;
     transition: .5s all;
+    transform: translateY(100px);
   }
   .Gallery--img:hover{
     cursor: crosshair;
   }
   .Gallery:hover .Gallery--img{
-    transform: translateY(-120px);
+    transform: translateY(-30px);
     mask: linear-gradient(to top, transparent 0%, rgba(255, 255, 255) 30%);
     backdrop-filter: blur(20px);
   }
   
   .Gallery--text{
-    position: absolute;
-    bottom: 30px;
+    position: inherit;
     z-index: -1;
     width: 300px;
     height: 100px;
+    transform: translateY(-50px);
   
   }
   .Gallery--caption{
@@ -80,6 +90,7 @@
     height: max-content;
     width: 100vw;
     margin: auto;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -103,6 +114,7 @@
     width: 50vh;
     transition: all 1s ease;
     border-radius: 20px;
+    transform: translateY(-120px);
   }
   
   .Gallery--img{

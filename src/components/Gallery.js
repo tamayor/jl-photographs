@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 function Gallery(props) {
   const [countClick, setCountClick] = useState(0);
-
   function handleCountClick() {
     if (countClick === 1) {
       setCountClick(2);
@@ -10,7 +9,7 @@ function Gallery(props) {
       setCountClick(1);
     }
   }
-  
+
 
   return (
     <section className="Gallery">
